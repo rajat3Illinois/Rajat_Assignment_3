@@ -1,0 +1,11 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "City_Owned_Trees.csv"},
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "COND"},
+      "y": {"field": "SIDE", "type": "nominal"},
+      "color": {"field": "SIDE", "type": "nominal"}
+    }
+  }
+
