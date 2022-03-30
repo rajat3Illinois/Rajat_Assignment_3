@@ -1,27 +1,26 @@
-{
+  {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 500,
     "height": 300,
-    "data": {
-        "url": "City_Owned_Trees.geojson",
-        "format": {"property": "features"}
+    "data": {"url": "City_Owned_Trees.csv"},
+    "projection": {
+      "type": "albersUsa"
+    },
+    "mark": "circle",
+    "encoding": {
+      "longitude": {
+        "field": "Y",
+        "type": "quantitative"
       },
-      "layer": [
-        {
-          "mark": {
-            "type": "geoshape",
-            "fill": "#eee",
-            "stroke": "#757575",
-            "strokeWidth": 0.5
-          }
-        },
-        {
-          "mark": "text",
-          "encoding": {
-            "text": {"field": "coordintaes", "type": "nominal"},
-            "y": {"field": "coordinates[0]"},
-            "x": {"field": "coordinates[1]"}
-          }
-        }
-      ]
+      "latitude": {
+        "field": "X",
+        "type": "quantitative"
+      },
+      "size": {"value": 10}
+    },
+    "config": {
+      "view": {
+        "stroke": "transparent"
+      }
+    }
   }

@@ -1,9 +1,0 @@
-{
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {"url": "City_Owned_Trees.csv"},
-    "mark": "bar",
-  "encoding": {
-    "x": {"field": "DBH", "type": "nominal"},
-    "y": {"aggregate": "count", "field": "DBH", "title":"Count"}
-  }
-}

@@ -1,0 +1,23 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 300,
+    "data": {"url": "City_Owned_Trees.csv"},
+    "params": [{
+      "name": "grid",
+      "select": "interval",
+      "bind": "scales"
+    }],
+    "mark": "circle",
+    "encoding": {
+      "x": {
+        "field": "TRUNKS", "type": "quantitative",
+        "scale": {"domain": [75, 150]}
+      },
+      "y": {
+        "field": "SITE", "type": "quantitative",
+        "scale": {"domain": [20, 40]}
+      },
+      "size": {"field": "COND", "type": "quantitative"}
+    }
+  }

@@ -19,34 +19,42 @@ d3.csv("City_Owned_Trees.csv", function(data) {
 });
  
 </script> -->
-<div id="vis" style="margin-left: 250px;"></div>
+<div id="vis" style="margin-left: 100px;"></div>
 <script>
-    vegaEmbed('#vis', "vega_lite_pan.json");
+    vegaEmbed('#vis', "Scatter_Plot_Side.json");
 </script>
 
-<div id="condition" style="margin-left: 100px;"></div>
+<div id="condition"></div>
 <script>
     vegaEmbed('#condition', "condition_count.json");
 </script>
 
 <div id="grow"></div>
 <script>
-    vegaEmbed('#grow', "grow.json");
+    vegaEmbed('#grow', "DBH_Count.json");
 </script>
 
-<div id="stackedPlot" style="margin-left: 250px;"></div>
+<div id="stackedPlot"></div>
 <script>
     vegaEmbed('#stackedPlot', "stacked_bar_plot.json");
 </script>
 
-<div id="brush" style="margin-left: 100px;"></div>
+<div id="brush"></div>
 <script>
     vegaEmbed('#brush', "brush.json");
 </script>
 
+<div id="treetype"></div>
+<script>
+    vegaEmbed('#treetype', "treetype.json");
+</script>
+
+<div id="chart"></div>
+<script>
+    vegaEmbed('#chart', "chart.json");
+</script>
 
 
 </body>
-
 
 </html>

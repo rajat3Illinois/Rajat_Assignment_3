@@ -1,6 +1,9 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 450,
+    "height": 250,
     "data": {"url": "City_Owned_Trees.csv"},
+    "title": "Condition Count Paint Brush View",
     "params": [{
       "name": "paintbrush",
       "select": {"type": "point", "on": "mouseover", "nearest": true}
@@ -12,6 +15,7 @@
       "size": {
         "condition": {"param": "paintbrush", "value": 300},
         "value": 50
-      }
+      },
+      "color": {"field": "COND"}
     }
   }

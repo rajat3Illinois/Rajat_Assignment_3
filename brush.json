@@ -1,6 +1,9 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 300,
     "data": {"url": "City_Owned_Trees.csv"},
+    "title": "Brush Plot of DBH vs Trunks",
     "params": [{
       "name": "brush",
       "select": "interval",
